@@ -1,6 +1,5 @@
-# Floricultura
-atv feita em HTML e CSS
+# Técnologia
+atv feita em HTML, CSS e Bootstrap
 ## Participantes
 - Kauan Américo
-- Kaio Pimentel
-- Bruno Gama
+- José Henrique
