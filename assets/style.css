@@ -1,17 +1,17 @@
   /*LOGO*/
 .logo {
-  height: 6em;
-  padding: 1em;
+  height: 4em;
+  padding: 0.5em;
   will-change: filter;
   transition: filter 300ms;
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #007E3A);
+  filter: drop-shadow(0 0 2em #000d7e);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #06AA51);
+  filter: drop-shadow(0 0 2em #0673aa);
 }
 
   /*NAVBAR - HEADER*/
@@ -49,7 +49,7 @@ button {
   line-height: 14px;
   letter-spacing: 1.2px;
   transition: .2s .1s;
-  background-image: linear-gradient(90deg,#1d1c1c,#06AA51);
+  background-image: linear-gradient(90deg,#1d1c1c,#062faa);
   border: 0 solid;
   overflow: hidden;
   justify-content: right;
@@ -280,7 +280,7 @@ body {
   transform: scale(1.1);
 }
 :root {
-  --scrollcolor:#06AA51;
+  --scrollcolor:#0634aa;
   --scrollbackground: #ffffff;
 }
 

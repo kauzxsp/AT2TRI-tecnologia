@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/img/logo.svg" />
+    <link rel="icon" href="../assets/img/logoo.png" />
     <title>HumanUnity</title>
     <link rel="stylesheet" href="../assets/style.css">
     <!-- <link rel="stylesheet" href="../assets/index.css"> -->
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark topo" style="background-color: rgb(255, 255, 255); justify-content: center;">
       <div class="container px-4" style="justify-content: center; align-items: center;">
         <a class="navbar-brand" href="./home.html">
-          <span> <img src="../assets/img/logo.svg" alt="" class="logo"> </span>
+          <span> <img src="../assets/img/logoo.png" alt="" class="logo"> </span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,66 +61,37 @@
     <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
       <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
         <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/aloe-vera-2631853_1280.jpg" alt="Image">
+          <img class="slider__image" src="https://cdn.pixabay.com/photo/2022/09/11/15/59/beggar-7447359_1280.jpg" alt="Image">
           <div class="slider__info">
-            <h2>Babosa</h2>
+            <h2>Desigualdade</h2>
           </div>
         </div>
         <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/mudaSoja.jpg" alt="Image">
+          <img class="slider__image" src="https://cdn.pixabay.com/photo/2019/10/19/16/30/poverty-4561704_1280.jpg" alt="Image">
           <div class="slider__info">
-            <h2>Muda de Soja</h2>
+            <h2>Pobreza</h2>
           </div>
         </div>
         <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/rosas.jpg" alt="Image">
+          <img class="slider__image" src="https://cdn.pixabay.com/photo/2016/07/29/06/08/man-1550501_1280.jpg" alt="Image">
           <div class="slider__info">
-            <h2>Buque de Rosas</h2>
+            <h2>Fome</h2>
           </div>
         </div>
         <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/persaVioleta.jpg" alt="Image">
+          <img class="slider__image" src="https://cdn.pixabay.com/photo/2017/08/06/09/21/muslims-2590609_1280.jpg" alt="Image">
           <div class="slider__info">
-            <h2>Violeta Persa</h2>
+            <h2>Imigrantes</h2>
           </div>
         </div>
         <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/samambaia.jpg" alt="Image">
+          <img class="slider__image" src="https://cdn.pixabay.com/photo/2015/06/28/08/26/xiamen-824233_1280.jpg" alt="Image">
           <div class="slider__info">
-            <h2>Samambaia</h2>
-          </div>
-        </div>
-        <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/girassol.jpg" alt="Image">
-          <div class="slider__info">
-            <h2>Girassol</h2>
-          </div>
-        </div>
-        <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/lavanda.jpg" alt="Image">
-          <div class="slider__info">
-            <h2>Lavanda</h2>
-          </div>
-        </div>
-        <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/mudaAlface.jpg" alt="Image">
-          <div class="slider__info">
-            <h2>Muda de Alface</h2>
-          </div>
-        </div>
-        <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/tulipaAm.jpg" alt="Image">
-          <div class="slider__info">
-            <h2>Tulipa Amarela</h2>
-          </div>
-        </div>
-        <div class="slider__item">
-          <img class="slider__image" src="../assets/img/cards/cravo.jpg" alt="Image">
-          <div class="slider__info">
-            <h2>Cravo</h2>
+            <h2>Favela</h2>
           </div>
         </div>
       </div>
+
       <div class="slider__nav" style="display: flex;justify-content: center;">
         <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'" style="font-family:'Kavivanar'; font-weight: bolder; font-size: 1.5rem;" >Anterior</button>
         <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'" style="font-family:'Kavivanar'; font-weight: bolder; font-size: 1.5rem;">Próximo</button>
@@ -137,19 +108,24 @@
 
       <div style="display: flex; align-items: center; margin: 50px;">
         <div >
-            <p style="padding-left: 10%; padding-right: 10%; font-size: 20px;">Aqui você encontrará as mais belas e frescas flores para todas as ocasiões.
-            Somos uma equipe apaixonada por flores e por ajudar nossos clientes a expressarem seus sentimentos através delas. Seja para um presente especial, um casamento, um evento corporativo ou simplesmente para decorar a sua casa, temos uma variedade incrível de flores e arranjos que certamente atenderão às suas necessidades.
-            Além disso, nossa equipe está sempre disponível para ajudá-lo(a) a escolher a melhor combinação de flores e cores para que o seu presente ou evento seja perfeito em todos os aspectos. Aqui na nossa floricultura, você também encontrará acessórios e presentes para complementar o seu arranjo floral, como vasos, cartões e chocolates.</p>
+            <p style="padding-left: 10%; padding-right: 10%; font-size: 20px;">
+              A desigualdade é um desafio global complexo que afeta comunidades e indivíduos em todo o mundo. Para abordar esse problema, foi desenvolvido o aplicativo "HumanUnity". Este aplicativo inovador tem como objetivo criar uma ponte entre pessoas, recursos e oportunidades, reduzindo as disparidades econômicas e sociais. 
+              Visa mobilizar comunidades inteiras na luta contra a desigualdade, capacitando as pessoas a melhorar suas vidas e contribuir para uma sociedade mais igualitária. Ao fornecer um espaço digital para ações concretas e conscientização, HumanUnity está no centro de uma mudança positiva para um mundo mais igualitário e inclusivo.
+              O app utiliza tecnologia de mapeamento e análise de dados para identificar áreas geográficas com altos índices de desigualdade.
+              Ele oferece uma plataforma onde empregadores podem postar vagas de emprego e programas de capacitação.
+              Conecta pessoas que desejam doar alimentos, roupas, itens domésticos e outros recursos com indivíduos e organizações que mais precisam.
+              Também facilita o registro de voluntários para várias causas e projetos de combate à desigualdade.
+            </p>
         </div>
         <div style="display: flex; padding-right: 10%;">
           <div class="card-body">
             <div style="display: flex; margin: 10px; justify-content: center; padding-right: 20%;"></div>
               <div class="card" style="width: 18rem; margin: 10px;">
-                <img src="../assets/img/produtos/babosaMuda.png" class="card-img-top" alt="..." height="300px">
+                <img src="../assets/img/logoo.png" class="card-img-top" alt="..." height="250px">
                 <div class="card-body">
                     <div>
-                        <h5 class="card-title">Muda de Babosa</h5>
-                        <a href="#" class="btn btn-primary">QUERO</a>
+                        <h5 class="card-title">Aplicativo</h5>
+                        <a href="#" class="btn btn-primary">BAIXAR</a>
                     </div>
                 </div>
               </div>
@@ -223,7 +199,7 @@
           </div>
 
           <div class="imgTotal">
-            <img src="../assets/img/logo.svg" alt="Instagram" class='imgIcon'/>
+            <img src="../assets/img/logoo.png" alt="Instagram" class='imgIcon'/>
         </div>
 
       </div>
