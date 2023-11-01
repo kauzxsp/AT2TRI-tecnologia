@@ -52,21 +52,32 @@
    
   <div class="contact" style="padding-left: 10%; padding-right: 10%; padding-bottom: 10%;">
     <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
+      <div class="col-md-8">
+        <label for="inputEmail4" class="form-label">Nome</label>
         <input type="email" class="form-control" id="inputEmail4">
       </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Nome</label>
+      <div class="col-md-8">
+        <label for="inputPassword4" class="form-label">Sobrenome</label>
         <input type="text" class="form-control" id="inputPassword4">
       </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Comentário</label>
+      <div class="col-8">
+        <label for="inputAddress2" class="form-label">Número de identificação</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Feedback">
+      </div>
+      <div class="col-8">
+        <label for="inputAddress2" class="form-label">Numero de telefone</label>
         <input type="text" class="form-control" id="inputAddress2" placeholder="Feedback">
       </div>
       <div class="col-md-2">
-        <label for="inputAddress2" class="form-label">Telefone</label>
-        <input type="number" class="form-control" id="inputAddress2" placeholder="Digite seu Número">
+        <label for="inputAddress2" class="form-label">País</label>
+        <select id="uf" name="uf" required>
+          <option value="">País de origem</option>
+          <option value="AC">Japão</option>
+          <option value="AL">Reino Unido</option>
+          <option value="AM">Paraguai</option>
+          <option value="AP">Portugal</option>
+          <option value="BA">Estados Unidos</option>
+        </select>
       </div>
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -76,7 +87,7 @@
 
   <div class="fundo">
     <div>
-        <p>&#169;2023 - Kauan & José - HumanUnity</p>
+        <p>&#169;2023 - HumanUnity</p>
     </div>
     <div class="imgTotal">
       <img src="../assets/img/logoo.png" alt="Instagram" class='imgIcon'/>
