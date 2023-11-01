@@ -1,5 +1,7 @@
-# Técnologia
-atv feita em HTML, CSS e Bootstrap
+# FUTURE FAST
+Projeto Future Fast em desenvolvimento.
 ## Participantes
 - Kauan Américo
+- Bruno Gama
+- José Henrique
 
